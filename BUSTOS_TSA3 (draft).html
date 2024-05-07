@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function changeTypeInput(selectId, inputId) {
+            var select = document.getElementById(selectId);
+            var input = document.getElementById(inputId);
+
+            input.value = select.value;
+        }
+    </script>
+</head>
+<body>
+    <form align="center">
+        National Dex: <input type="number" min="0"><br>
+        <input type="radio" id="gen1" name="gen"> Generation 1 <br>
+        <input type="radio" id="gen2" name="gen"> Generation 2 <br>
+        <input type="radio" id="gen3" name="gen"> Generation 3<br>
+        <input type="radio" id="gen4" name="gen"> Generation 4<br>
+        <input type="radio" id="gen5" name="gen"> Generation 5<br>
+        <input type="radio" id="gen6" name="gen"> Generation 6<br>
+        <input type="radio" id="gen7" name="gen"> Generation 7<br>
+        <input type="radio" id="gen8" name="gen"> Generation 8<br>
+        <input type="radio" id="gen9" name="gen"> Generation 9<br>
+        <br>Pokemon Name: <input type="search"><br>
+        <br>Image: <input type="file"><br>
+        <br>Type 1:
+        <select name="t1" id="type1" onchange="changeTypeInput('type1', 'type1_input')">
+            <option value="none">None</option>
+            <option value="normal">Normal</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="grass">Grass</option>
+            <option value="ice">Ice</option>
+            <option value="fighting">Fighting</option>
+            <option value="poison">Poison</option>
+            <option value="ground">Ground</option>
+            <option value="flying">Flying</option>
+        </select>
+        <input type="text" id="type1_input" style="display: none;"><br>
+        Type 2:
+        <select name="t2" id="type2" onchange="changeTypeInput('type2', 'type2_input')">
+            <option value="none">None</option>
+            <option value="psychic">Psychic</option>
+            <option value="bug">Bug</option>
+            <option value="rock">Rock</option>
+            <option value="ghost">Ghost</option>
+            <option value="dragon">Dragon</option>
+            <option value="dark">Dark</option>
+            <option value="steel">Steel</option>
+            <option value="fairy">Fairy</option>
+        </select>
+        <input type="text" id="type2_input" style="display: none;"><br>
+        <br>Evolves from: <input type="search"> Evolves to:<input type="search"> <br>
+        <br> Nickname: <Input type="search" id="nickname"><br>
+        <br> Birthday: <input type="date" id="birthday"><br>
+    </form>
+</body>
+</html>
+
+
+
+<table border = "1" align ="center">
+    <tr>
+        <th>National Dex</th>
+        <th>Generation</th>
+        <th>Pokemon Name</th>
+        <th>Image</th>
+        <th>Type 1</th>
+        <th>Type 2</th>
+        <th>Evolves From</th>
+        <th>Evolves To</th>
+        <th>Nickname</th>
+        <th>Birthday</th>
+    </tr>
+<tr align ="center">
+</tr>
+<!-- pokemon 1 -->
+<tr align ="center">
+    <td>#0001</td>
+    <td>Generation I</td>
+    <td>chelsexie</td>
+    <td> <img src="441393873_818537046853598_823613523445053587_n.jpg " width="190" alt=""></td>
+    <td bgcolor="violet"></tdbgcolor>Fairy</td>
+    <td bgcolor="pink">psychic</td>
+    <td>Cleffa</td>
+    <td>Clefable</td>
+    <td>chelsheesh</td>
+    <td>12/07/2004</td>
+</tr>
+<!-- pokemon 2 -->
+<tr align = "center">
+        <td>#0079</td>
+        <td>Generation I</td>
+        <td>Slowpoke</td>
+        <td> <img src="https://assetsio.gnwcdn.com/pokemon_go_slowpoke_thumbnail.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp" width="200" alt=""</td>
+        <td bgcolor="cyan">Water</td>
+        <td bgcolor="pink">Psychic</td>
+        <td>-</td>
+        <td>Slowbro</td>
+        <td>mogu mogu</td>
+        <td>10/03/2000</td>
+    </tr>
+    <!-- pokemon 3 -->
+    <tr align ="center">
+        <td>#0012</td>
+        <td>Generation I</td>
+        <td>Butterfree</td>
+        <td> <img src="https://images.saymedia-content.com/.image/t_share/MTc0NDI0OTMzNjEzNDQ2NTA0/pokemon-review-butterfree-and-beedrill.png" width="200" alt=""</td>
+        <td bgcolor="green">Bug</td>
+        <td bgcolor="orange">Flying</td>
+        <td>Metapod</td>
+        <td>-</td>
+        <td>paro-paro g</td>
+        <td>05/09/2010</td>
+    </tr>
+
+
+     <!-- pokemon 4 -->
+     <tr align ="center">
+        <td>#0007</td>
+        <td>Generation I</td>
+        <td>Squirtle</td>
+        <td> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b2dc26c0-dcd2-4450-9c7f-f843103bdaf3/dga2a10-b9132214-cfbe-442b-9a64-e51caa7d8d0b.png/v1/fill/w_1280,h_1280,q_80,strp/squirtle__pokemon_by_paullojose_dga2a10-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2IyZGMyNmMwLWRjZDItNDQ1MC05YzdmLWY4NDMxMDNiZGFmM1wvZGdhMmExMC1iOTEzMjIxNC1jZmJlLTQ0MmItOWE2NC1lNTFjYWE3ZDhkMGIucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.aUOpwGlH4H2lS9SkQLsysn9LeTegJNrIeyMvCMHz1D0" width="200" alt=""</td>
+        <td colspan="2" bgcolor="cyan"
+        <td>Water</td>
+        <td>-</td>
+        <td>Wartotle</td>
+        <td>Wet</td>
+        <td>06/20/2010</td>
+    </tr>
+     <!-- pokemon 5 -->
+     <tr align ="center">
+        <td>#0005</td>
+        <td>Generation I</td>
+        <td>Charmeleon</td>
+        <td> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8747c0d7-6677-4428-a1ae-51e96a9687ba/dg8k28y-e5b440f4-9e4f-4e86-9631-87ae505aceba.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg3NDdjMGQ3LTY2NzctNDQyOC1hMWFlLTUxZTk2YTk2ODdiYVwvZGc4azI4eS1lNWI0NDBmNC05ZTRmLTRlODYtOTYzMS04N2FlNTA1YWNlYmEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.PbweDwjTd74HXea0pz6tcy2RdPmyhriuKAhHKoKVW8A" width="200" alt=""</td>
+        <td colspan="2" bgcolor="red"
+        <td>Fire</td>
+        <td>Charmander</td>
+        <td>Charizard</td>
+        <td>RARWH</td>
+        <td>05/02/2020</td>
+    </tr>
+      <!-- pokemon 6 -->
+      <tr align ="center">
+        <td>#0025</td>
+        <td>Generation I</td>
+        <td>Pikachu</td>
+        <td> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/98085597-248c-45ad-acb8-91b700d6f887/ddkmi8n-0a1d006a-1a52-4f58-bd70-2eb876e64b7b.png/v1/fill/w_960,h_832/08_pikachu__lightning____smash_bros__ultimate_by_elevenzm_ddkmi8n-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEwOSIsInBhdGgiOiJcL2ZcLzk4MDg1NTk3LTI0OGMtNDVhZC1hY2I4LTkxYjcwMGQ2Zjg4N1wvZGRrbWk4bi0wYTFkMDA2YS0xYTUyLTRmNTgtYmQ3MC0yZWI4NzZlNjRiN2IucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.-iBJZwdYm_v7jmgjmk81qe_UZuVz4NUpIaXlJ0xI1KM" width="210" alt=""</td>
+        <td colspan="2" bgcolor="yellow"
+        <td>Electric</td>
+        <td>Pichu</td>
+        <td>Raichu</td>
+        <td>LAYTNING MAKWEEN</td>
+        <td>03/03/2001</td>
+    </tr>
+     <!-- pokemon 7 -->
+     <tr align ="center">
+        <td>#0001</td>
+        <td>Generation I</td>
+        <td>Bulbasaur</td>
+        <td> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1c7dfb8d-b83c-4059-b25a-d591b723e2c3/dfw77wk-78f1a145-e82c-4ef0-b672-f0ff9f2dd2d7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFjN2RmYjhkLWI4M2MtNDA1OS1iMjVhLWQ1OTFiNzIzZTJjM1wvZGZ3Nzd3ay03OGYxYTE0NS1lODJjLTRlZjAtYjY3Mi1mMGZmOWYyZGQyZDcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RBWdsc8UspBAZ-AqHenc0hGkGWhxPj5wE736mAx51g8" width="195" alt=""</td>
+        <td bgcolor="lightgreen">Grass</td>
+        <td bgcolor="purple">Poison</td>
+        <td>-</td>
+        <td>lyvsaur</td>
+        <td>Luna cutie</td>
+        <td>04/07/2003</td>
+    </tr>
+         <!-- pokemon 8 -->
+         <tr align ="center">
+            <td>#0045</td>
+            <td>Generation I</td>
+            <td>Vileplum</td>
+            <td> <img src="https://i.redd.it/team-vileplume-or-team-bellossom-v0-z8o85iff28za1.jpg?width=1080&format=pjpg&auto=webp&s=ff74616f14500f0dba43fa3024080d91aa273e50" width="195" alt=""</td>
+            <td bgcolor="lightgreen">Grass</td>
+            <td bgcolor="purple">Poison</td>
+            <td>Gloom</td>
+            <td>-</td>
+            <td>MASHROOM</td>
+            <td>11/26/2009</td>
+        </tr>
+
+
+         <!-- pokemon 9 -->
+         <tr align ="center">
+            <td>#0143</td>
+            <td>Generation I</td>
+            <td>Snorlax</td>
+            <td> <img src="https://www.hookedonhallmark.com/assets/images/Pokemon-Snorlax-Keepsake-Ornament_1899QXI7549_01.jpeg" width="195" alt=""</td>
+            <td colspan="2" bgcolor="beige"
+            <td>Normal</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Baymax</td>
+            <td>04/13/2003</td>
+        </tr>
+
+
+         <!-- pokemon 10 -->
+         <tr align ="center">
+            <td>#0143</td>
+            <td>Generation I</td>
+            <td>Flareon</td>
+            <td> <img src="https://pics.craiyon.com/2023-06-27/2fc5fe540f8b4842b67aeeaea0bcb16c.webp" width="195" alt=""</td>
+            <td colspan="2" bgcolor="red"
+            <td>Fire</td>
+            <td>Eevee</td>
+            <td>-</td>
+            <td>koykoy na buyboy</td>
+            <td>09/12/2002</td>
+        </tr>
