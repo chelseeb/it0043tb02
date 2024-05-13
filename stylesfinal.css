@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Freeman', sans-serif;
+    text-align: center;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 150px;;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkgreen;
+    
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+
+    color: rgb(3, 0, 0); 
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 20px;
+
+}
+
+#footer {
+    text-align: right;
+    color: darkgreen;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+}
