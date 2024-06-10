@@ -1,0 +1,356 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    width: 90vw;
+    height: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 115px;
+    overflow: hidden;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: white;
+    text-decoration: none;
+    font-size: 2.1rem;
+}
+
+nav {
+    background-color: rgb(205, 203, 137);
+    height: fit-content;
+    color: white;
+    padding: 10px;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.menu-li {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.menu-li:hover {
+    transform: scale(1.2);
+}
+
+.menu-li>a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-li>a:hover {
+    color: rgb(110, 76, 7);
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    height: 160vh;
+    gap: 25px;
+}
+
+.about-container {
+    padding: 10px;
+    background-image: url(bgg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.sale {
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(forsale.png);
+    grid-column: 3/3;
+    grid-row: 1/2;
+}
+
+.flower-list {
+    background-image: url(grassbg.png);
+    padding: 45px;
+    grid-column: 1/3;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.home {
+    border-radius: 20px;
+    grid-column: 3/3;
+    grid-row: 2/3;
+    background-color: #959652;
+}
+
+.homepage {
+    color: white;
+    text-align: center;
+
+}
+
+form {
+    text-align: center;
+    margin-left: 30px;
+    color: white;
+}
+
+label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.flower-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 135px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.flower-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.flower-item h2 {
+    color: #959652;
+    padding: 20px;
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+    transition: color 0.3s ease;
+}
+
+.flower-item:hover h2 {
+    color: #444c11;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.flower-item p {
+    color: #666;
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
+
+.flower-item .price {
+    color: #2f1c1b;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.flower-item img {
+    width: 75%;
+    height: 75px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.flower-item:hover img {
+    transform: scale(1.05);
+}
+
+.desc {
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    justify-content: justify;
+    display: inline;
+    padding: 15px;
+
+}
+
+.about-container h1 {
+    font-size: 2.5rem;
+    color: #959652;    
+}
+
+.about-container h1 {
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.about-container:hover {
+    background-image: url(bgflower.gif);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: white;
+
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    color: #2f2b18;
+}
+
+
+@media (max-width: 995px) {
+
+    .main-container {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .about-container {
+        grid-column: 1/4;
+        grid-row: auto
+    }
+
+    .sale {
+        height: 760px;
+        grid-column: 1/4;
+        grid-row: auto;
+    }
+
+    .flower-list {
+        grid-column: 1/4;
+        grid-row: auto;
+
+    }
+
+    .home {
+        grid-column: 1/4;
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 705px) {
+    .nav-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly
+    }
+
+    .logo-container {
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .button {
+        border-radius: 30px;
+        font-size: medium;
+
+
+    }
+}
+
+.us{
+     
+        transition: transform 0.3s ease;
+    }
+    
+    .us:hover {
+        transform: scale(1.4); 
+    }
+
+
+.button {
+    background-color: #7d8101; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+
+}
+
+.button:hover {
+    margin-top: 3px;
+    background-color: #d2a10f; 
+}
+
+.socials {
+    padding: 10px;
+}
+
+.contact form {
+    margin: 0 auto;
+    text-align: left;
+    background-color: #FBEDE0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.contact h2.us {
+    margin-top: 3px;
+    font-size: 2rem;
+    color: #444c11;
+    text-align: center;
+}
+
+.contact label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #444c11;
+    outline: none;
+}
