@@ -1,13 +1,229 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT0043 - TB02</title>
+    <title>Final Project Bustos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>Bustos, Chelsee L.</h1>
-    <h2>ITBA - First Year
-    </h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nisi labore dolorem modi placeat. Repellat rem, velit architecto fugiat beatae ipsam reprehenderit ab corrupti maiores nesciunt placeat, aliquid earum natus!</p>
+    <div class="container">
+        <div class="main">
+            <div id="head">
+                <div class="logo">
+                    <img src="cblogoblack.png" alt="">
+                    <span class="logo-text">Chelsee</span>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="content-wrapper">
+                <div class="intro" id="intro-area">
+                    <h3>Hey there! I'm</h3>
+                    <h2>Chelsee Bustos</h2>
+                    <p>A first-year <strong>BSIT-BA</strong> student at FEUTECH.
+                        <br> I am a creative individual with a passion for technology
+                        <br>and business.
+                        I love exploring new ideas and innovations.
+                    </p>
+                    <div class="contact-section">
+                        <button class="clbcv" id="download-cv">Download CV</button>
+                        <div class="Media-icons">
+                            <i class="fa-brands fa-facebook" id="facebook"></i>
+                            <i class="fa-brands fa-instagram" id="instagram"></i>
+                            <i class="fa-brands fa-twitter" id="twitter"></i>
+                            <i class="fa-brands fa-linkedin" id="linkedin"></i>
+                        </div>
+                        <a href="https://www.facebook.com/chelsee.bustos.71/" target="_blank" id="facebook-link"
+                            style="display: none;"></a>
+                        <a href="https://www.instagram.com/chelsbustos/" target="_blank" id="instagram-link"
+                            style="display: none;"></a>
+                        <a href="https://x.com/chelsee_b" target="_blank" id="twitter-link" style="display: none;"></a>
+                        <a href="https://www.linkedin.com/in/chelsee-bustos-057296228/" target="_blank"
+                            id="linkedin-link" style="display: none;"></a>
+                    </div>
+                </div>
+                <div class="chelsit">
+                    <img src="chelsit.png" alt="">
+                </div>
+            </div>
+
+            <!-- About Section -->
+
+            <div id="about" class="about-section">
+                <div class="chelshand">
+                    <img src="chelshand.png" alt="ChelseeHand" class="handpic">
+                </div>
+
+                <div class="right-content">
+                    <h2>So, Who am I?</h2>
+                    <p>In addition to my studies, I take on basic commissions for graphic design and video editing.
+                        My goal is to master web development and combine my skills to create dynamic and engaging
+                        digital experiences.
+                        Adaptable and eager to learn, I am always ready to take on new challenges and tasks.</p>
+
+                    <h1>Education:</h1>
+                </div>
+
+                <div class="icons">
+                    <div class="icon-container">
+                        <a href="https://www.facebook.com/ANGELITESFOREVER" target="_blank">
+                            <img src="awaicon.png" alt="AWA Icon">
+                            <p><strong>Elementary</strong><br>Angel Of Wisdom Academy</p>
+                            <p><strong>Valedictorian</strong></p>
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.facebook.com/profile.php?id=100057343304055" target="_blank">
+                            <img src="smmsicon.png" alt="SMMS Icon">
+                            <p><strong>Junior High</strong><br>St. Martin Montessori School</p>
+                            <p><strong>Salutatorian</strong></p>
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.facebook.com/our.lady.of.fatima.university" target="_blank">
+                            <img src="olfuicon.png" alt="OLFU Icon">
+                            <p><strong>Senior High</strong><br>Our Lady of Fatima University</p>
+                            <p><strong>6th out of 2500 ABM students</strong></p>
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.facebook.com/FEUTechOfficial" target="_blank">
+                            <img src="feuicon.png" alt="FEU Icon">
+                            <p><strong>College</strong><br>FEU Institute of Technology</p>
+                            <p><strong>Presidents Scholarship</strong></p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="portfolio-section">
+        <div class="portfolio-container">
+
+            <!-- Right side -->
+            <div class="portfolio-right">
+                <img src="chelsAHA.png" alt="ChelsAHA Image">
+            </div>
+
+            <!-- Left side -->
+            <div class="portfolio-left">
+                <div class="arrow-container">
+                    <img src="arrowdown.png" alt="Arrow Down" class="arrow-down">
+                </div>
+                <h2 class="portfolio-heading">Navigate my </h2>
+                <img src="portfolioicon.gif" alt="Portfolio Icon">
+                <p class="portfolio-text">Here are some of my works from our web design course.
+                    Explore with me as I continue to learn and develop!</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="gallery-container">
+            <a href="https://rikkeee.github.io/it0043tb02/tsa8/bustos_mangubat_tsa8.html" target="_blank">
+                <img class="portfolio-item portfolio-item-1" src="simboxwork.PNG" data-index="1" alt="SimBox Work">
+            </a>
+            <a href="https://chelseeb.github.io/it0043tb02/abundo_bustos_TSA7.html" target="_blank">
+                <img class="portfolio-item portfolio-item-2" src="opheliawork.PNG" data-index="2" alt="Ophelia Work">
+            </a>
+            <a href="https://gabgab0102.github.io/it0043tb02/abundo_bustos_tsa5.html" target="_blank">
+                <img class="portfolio-item portfolio-item-3" src="pokecardswork.PNG" data-index="3"
+                    alt="PokeCards Work">
+            </a>
+            <a href="https://chelseeb.github.io/it0043tb02/Bustos_tsa2.html" target="_blank">
+                <img class="portfolio-item portfolio-item-4" src="advisorywork.PNG" data-index="4" alt="Advisory Work">
+            </a>
+            <a href="https://chelseeb.github.io/it0043tb02/BUSTOS_tsa3.html" target="_blank">
+                <img class="portfolio-item portfolio-item-5" src="pokedexwork.PNG" data-index="5" alt="Pokedex Work">
+            </a>
+        </div>
+        <div class="portfolio-controls">
+            <button class="portfolio-controls-previous">Previous</button>
+            <button class="portfolio-controls-next">Next</button>
+        </div>
+    </div>
+    
+
+    <div id="services" class="services-page">
+        <div class="services-header">
+            <img src="servicesicon.gif" alt="Services Icon" class="services-icon">
+        </div>
+        <div class="services-content">
+            <div class="services-icons-row">
+                <div class="service-item">
+                    <img src="videoediticon.png" alt="Video Editing Icon" class="service-icon">
+                    <p>Video Editing</p>
+                </div>
+                <div class="service-item">
+                    <img src="artsicon.png" alt="Graphic Arts Icon" class="service-icon">
+                    <p>Graphic Arts</p>
+                </div>
+                <div class="service-item">
+                    <img src="uiuxicon.png" alt="UI/UX Icon" class="service-icon">
+                    <p>UI/UX</p>
+                </div>
+                <div class="service-item">
+                    <img src="socialsicon.png" alt="Social Media Handler Icon" class="service-icon">
+                    <p>Social Media Handler</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="phone-compile-container">
+            <a href="compiledprojects.pdf" target="_blank">
+                <img src="phonecompile.png" alt="Phone Compile Icon">
+            </a>
+        </div>
+        
+        </div>
+
+          <!-- Contact Me Section -->
+    <div id="contacts" class="contact-me">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <p>Hi! feel free to reach out!</p>
+            <div class="contact-details">
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email:</span>
+                    <a href="mailto:chelseebustos@gmail.com" class="email-link">chelseebustos@gmail.com</a>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-phone"></i>
+                    <span>Phone:</span>
+                    <span>09478890666</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Address:</span>
+                    <span>Taytay, Rizal</span>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
