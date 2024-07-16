@@ -1,0 +1,37 @@
+.carousel-item img {
+    border-radius: 15px;
+    object-fit: cover;
+    height: 400px;
+    cursor: pointer;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 4px;
+}
+
+.navbar-toggler-icon {
+    display: none;
+}
+
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    border: none;
+    outline: none;
+}
+
+.custom-toggler-icon {
+    font-size: 1em;
+    color: black;
+    border: none;
+    outline: none;
+}
+
